@@ -1,6 +1,7 @@
 ### Scala template
-.target
+**/target
 .bsp
 .idea
 *.log
 *.iml
+
