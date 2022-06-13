@@ -7,9 +7,10 @@ val mainClassName = "com.github.zjjfly.Main"
 lazy val root = (project in file("."))
   .enablePlugins(NativeImagePlugin)
   .settings(
-    name := "App",
+    name := "scala-template",
     libraryDependencies ++= Seq(
-      "org.specs2" %% "specs2-core" % "4.15.0" % "test"
+      "org.specs2" %% "specs2-core" % "4.15.0" % "test",
+      "org.specs2" %% "specs2-mock" % "4.15.0" % "test"
     ),
     idePackagePrefix := Some("com.github.zjjfly"),
     assembly / mainClass := Some(mainClassName),
